@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from "react";
 import Formulario from "./components/Formulario";
 import PaintData from "./components/PaintData.jsx";
+import PWA from "./components/PWA";
 
 function App() {
   const [characterName, setCharacterName] = useState("");
@@ -21,7 +22,9 @@ function App() {
   return (
     <div className="container">
       <h1 className="text-center">Rick and Morty</h1>
+      <h2>Hola</h2>
       <Formulario setCharacterName={setCharacterName} />
+      <PWA />
       <PaintData characterName={characterName} />
     </div>
   );
