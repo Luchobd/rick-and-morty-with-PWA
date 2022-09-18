@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="container">
       <h1 className="text-center">Rick and Morty</h1>
-      <h2>Hola</h2>
+
       <Formulario setCharacterName={setCharacterName} />
       <PWA />
       <PaintData characterName={characterName} />
